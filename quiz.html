@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Do You Know Your Presidents?</title>
+        <link rel="stylesheet" href="style.css" />
+    
+        <!-- Allows access to Font-Awesome's library -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        />
+    
+        <!-- Displays one of the various favicons depending on what the user is using -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    
+        <!-- Pre-Made libraries of Bootstrap that allow the system to recognize bootstrap terms, such as fonts, special icons, and most importantly classes -->
+        <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous"
+            />
+        <link
+              rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+            />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+              href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+              rel="stylesheet"
+            />
+        <script
+              src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+              crossorigin="anonymous"
+        ></script>
+        <script src="enabler.js" defer></script>
+        <!-- Links to LESS library CDN -->
+        <link rel="stylesheet/less" type="text/css" href="my_styles.less" />
+        <script src="https://cdn.jsdelivr.net/npm/lessLinks to an external site." ></script>
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    
+    </head>
+<body>
+    <div>
+        <!-- Using CSS, this class makes sure that the navbar becomes a hamburger menu depending on the browser window size -->
+        <a class="hamburger" href="#navbar">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Makes up both the background of the navbar, as well as it's content in the form of a list -->
+        <nav id="navbar" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            <h1 style="text-align: center; color: red;">Leaders of Our Land</h1>
+            <ul>
+                <li><a href="index.html">Cards</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                
+                <a class="close" href="#">
+                    <i class="fa fa-close"></i>
+                </a>
+            </ul>
+        </nav>
+
+    </div>
+    
+    <!-- Modal content for when the Advanced Question Answer is revealed; Placed above the columns for ease of access and organization -->
+    <div class="modal fade" id="advancedModal" tabindex="-1" aria-labelledby="advancedModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="advancedModalLabel">
+                        Hardest Answer!
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>George Washington,</p>
+                    <p>John Adams,</p>
+                    <p>Thomas Jefferson,</p>
+                    <p>James Madison,</p>
+                    <p>and James Monroe!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap's Container-Fluid and Row functionality, to keep the quiz orderly no matter how big the window is -->
+    <div class="container-fluid" style="background-color: deepskyblue; padding: 50px; text-align: center;">
+        <div class="row">
+            <h1 style="text-align: center;" id="quizHeader">Quiz! Do You Know Your Presidents?</h1>
+            <h3>Group up, and have a teacher record your answers before the real ones are revealed!</h3>
+            <br>
+            <!-- Start of the two Columns used for the main Quiz Questions, with them being side-by-side on a wide screen and stacking onto one another as the window shrinks; -->
+            <div class="col" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 5px;">
+
+                <p>____________________________________________________</p>
+
+                <!-- The questions and answers use Popover buttons, with the left column having them appear on the right, and vice versa -->
+                <div class="row"><p>Which President had three Vice Presidents?</p><button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Answered!" data-bs-content="Franklin D. Roosevelt; They were John Nance Garner, Henry A. Wallace, and Harry S. Truman">
+
+                    <!-- The icons aren't from an outsources website; These come from Bootstraps brand new icon library -->
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                    <span>Ready to Answer</span>
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                </button></div>
+
+                <p>____________________________________________________</p>
+                
+                <div class="row"><p>Which President began the annual Easter Roll with his wife?</p><button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Answered!" data-bs-content="Rutherford B. Hayes.">
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                    <span>Ready to Answer</span>
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                </button></div>
+                
+                <p>____________________________________________________</p>
+
+                <div class="row"><p>Which President was the first to get a Nobel Peace Prize?</p><button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Answered!" data-bs-content="Theodore 'Teddy' Roosevelt, for getting Russia and Japan to end a conflict between the two.">
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                    <span>Ready to Answer</span>
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                </button></div>
+
+                <p>____________________________________________________</p>
+
+            </div>
+            <div class="col" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 5px;">
+                
+                <p>____________________________________________________</p>
+
+                <div class="row"><p>Which Founding Father President was 'cursed'?</p><button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Answered!" data-bs-content="James Madison; Both of his Vice Presidents (George Clinton and that VP's follow-up, Elbridge Gerry,) passed away while in office. After this, Madison refused to have another Vice President until his Presidency was over.">
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                    <span>Ready to Answer</span>
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                </button></div>
+
+                <p>____________________________________________________</p>
+
+                <div class="row"><p>Who was the first President actually born in America after it gained it's freedom?</p><button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Answered!" data-bs-content="Martin Van Buren; Despite his family moving from Holland and English being his second language, he was born in the now-existing country of America.">
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                    <span>Ready to Answer</span>
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                </button></div>
+
+                <p>____________________________________________________</p>
+
+                <div class="row"><p>Who was the first President to pass away while in office?</p><button class="btn btn-md btn-primary d-block m-4" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Answered!" data-bs-content="William Henry Harrison; He passed after only a month as President from a bad case of pneumonia.">
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                    <span>Ready to Answer</span>
+                    <span> <i class="bi bi-question-octagon"></i></span>
+                </button></div>
+
+                <p>____________________________________________________</p>
+            </div>
+            <p><b>Advanced Question</b>: Can you name all of the Founding Father Presidents in order?</p><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#advancedModal" style="text-align: center; margin-left: 24px">
+                Got Your Answers Ready?
+            </button>
+        </div>
+    </div>
+</body>
+</html>

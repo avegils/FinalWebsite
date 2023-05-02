@@ -1,0 +1,84 @@
+/* Making variable with SCSS that can be used multiple times */
+$fonts_3: Georgia, 'Times New Roman', Times, serif;
+
+/* Using said variables to change font types */
+h3 {
+    font-family: $fonts_3;
+}
+
+#quizHeader {
+    font-family: $fonts_3;
+}
+
+/** Makes the main navbar at the top of the screen */
+nav {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    border: 1px solid;
+    border-style: inset;
+    border-width: 2px;
+    padding: 1px;
+    background-color: blue;
+    text-align: left;
+    transform: translateY(-100%);
+    transition: transform 0.1s ease;
+  }
+  
+  /** Applies to unordered list directly descended from the nav */
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  /** Applies to unordered lists/links directly descended from the nav */
+  nav > ul a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 2px;
+    margin: 2px;
+    color: white;
+    display: block;
+  }
+  
+  /** After link has been opened, turn dark red */
+  nav > ul a:link {
+    color: darkred;
+  }
+  
+  /** When the cursor hovers over text, turn red */
+  nav > ul a:hover {
+    color: red;
+  }
+
+  nav:target {
+    transform: translateY(0);
+  }
+
+  /** When the browser size gets small enough, the nav-bar menu will squeeze left and up into a hamburger menu */
+  @media screen and (min-width: 650px) {
+    nav {
+      position: static;
+      height: auto;
+      transform: translateY(0);
+      width: 100%;
+    }
+    .hamburger,
+    .close {
+      display: none;
+    }
+  
+    nav li {
+      display: inline-block;
+    }
+  }
+
+body {
+    background-color: burlywood;
+}

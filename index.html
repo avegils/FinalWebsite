@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Were the Presidents?</title>
+    <link rel="stylesheet" href="style.css" />
+    
+
+    <!-- Allows access to Font-Awesome's library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- Displays one of the various favicons depending on what the user is using -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Pre-Made libraries of Bootstrap that allow the system to recognize bootstrap terms, such as fonts, special icons, and most importantly classes -->
+    <link rel="stylesheet" href="https://use.typekit.net/kvj2fwy.css">
+    <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+          href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+          rel="stylesheet"
+        />
+    <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+    ></script>
+
+
+</head>
+    <body>
+
+        <div>
+            <!-- Using CSS, this class makes sure that the navbar becomes a hamburger menu depending on the browser window size -->
+            <a class="hamburger" href="#navbar" role="button" aria-label="open hamburger menu">
+                <!-- The first instance of 'role' and 'aria-label', which I use throughout; This labels both what an item is and what it's function is for the visually impaired -->
+                <i class="fa fa-bars" aria-label="open hamburger menu"></i>
+            </a>
+
+            <!-- Makes up both the background of the navbar, as well as it's content in the form of a list -->
+            <nav id="navbar" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <h1 style="text-align: center; color: red;" role="title">Leaders of Our Land</h1>
+                <ul>
+                    <li><a href="index.html" aria-label="navigation tab">Cards</a></li>
+                    <li><a href="quiz.html" aria-label="navigation tab">Quiz</a></li>
+                    
+                    <a class="close" href="#" aria-label="Close hamburger menu">
+                        <i class="fa fa-close" aria-label="Close hamburger menu"></i>
+                    </a>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Bootstrap's Container-Fluid and Row functionality, to keep the cards orderly no matter how big the window is -->
+        <div class="container-fluid" style="background-color: deepskyblue; text-align: center; padding: 50px;">
+            <div class="row">
+
+                <!-- The actual templates for a President Card; includes details for the header, the size the card's exterior and interior content takes up, the Presidential image, and the main text -->
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>George Washington</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/01-washington.jpg" alt="Presidential Portrait of George Washington" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: April 30, 1789 - March 4, 1797</p>
+                            <p><b>Lived</b>: 1732 - 1799</p>
+                            <p><b>Vice President</b>: John Adams</p>
+                            <p><b>Party</b>: Unaffiliated</p>
+                            <p>Washington didn't actually have wooden teeth! After breaking his original set from eating walnuts, his new set was made from ivory and bones from the poor and Washington's workers.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>John Adams</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/02-adams.jpg" alt="Presidential Portrait of John Adams" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1797 - March 4, 1801</p>
+                            <p><b>Lived</b>: 1735 - 1826</p>
+                            <p><b>Vice President</b>: Thomas Jefferson</p>
+                            <p><b>Party</b>: Federalists</p>
+                            <p>John Adams was the oldest president for many years, living up to the ripe age of 90, before Ronald Reagan stole that title at 93.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Thomas Jefferson</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/03-jefferson.jpg" alt="Presidential Portrait of Thomas Jefferson" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1801 - March 4, 1809</p>
+                            <p><b>Lived</b>: 1743 - 1826</p>
+                            <p><b>Vice President</b>: Aaron Burr (1800) & George Clinton (1804)</p>
+                            <p><b>Party</b>: Democratic-Republicans</p>
+                            <p>Jefferson was a made of refined culture; Not only was he an avid architect fan and hobbyist, but he also: was used to fanciful French food and drink, collected fossils, and had the largest collection of books in the United States for a time, containing 6,500 volumes.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>James Madison</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/04-madison.jpg" alt="Presidential Portrait of James Madison" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1809 - March 4, 1817</p>
+                            <p><b>Lived</b>: 1751 - 1836</p>
+                            <p><b>Vice President</b>: George Clinton (1806) / Elbridge Gerry (1812)</p>
+                            <p><b>Party</b>: Democratic-Republicans</p>
+                            <p>Despite dealing with hardships like health and voters being unfazed due missing alcohols at his campaigns, Madison was cursed in a way; Both of his Vice Presidents, Clinton and Gerry, died in office. With these two deaths on his soul, Madison never had a Vice President after Gerry's leave.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>James Monroe</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/05-monroe.jpg" alt="Presidential Portrait of James Monroe" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1817 - March 4, 1825</p>
+                            <p><b>Lived</b>: 1758 - 1831</p>
+                            <p><b>Vice President</b>: Daniel D. Tompkins</p>
+                            <p><b>Party</b>: Democratic-Republicans</p>
+                            <p>Starting as an apprentice of law under Thomas Jefferson, Monroe eventually became one of the Founding Fathers of the United States, and was in fact the last one to serve as President. This is probably the reason why, unlike any election up to date (save for George Washington's), Monore ran for President without any rivals.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>John Quincy Adams</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/06-adams.jpg" alt="Presidential Portrait of John Quincy Adams" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1825 - March 4, 1829</p>
+                            <p><b>Lived</b>: 1767 - 1848</p>
+                            <p><b>Vice President</b>: John C. Calhoun</p>
+                            <p><b>Party</b>: Democratic-Republicans / National Republicans</p>
+                            <p>John Quincy Adams' Presidential years started off smooth at first, until conspiracy theories rose from supporters of Q. Adams' rival, Andrew Jackson, that there was corruption behind Q. Adams' election. The President's own Vice President, Calhoun, was against him for all his Presidential years, going against Q. Adam's Presidential decisions and filling Senate seats with Anti-Adams supporters. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Andrew Jackson</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/07-jackson.jpg" alt="Presidential Portrait of Andrew Jackson" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1829 - March 4, 1837</p>
+                            <p><b>Lived</b>: 1767 - 1845</p>
+                            <p><b>Vice President</b>: John C. Calhoun (1828) / Martin Van Buren (1832)</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>After a dirty election where Jackson spread rumors against John Quincy Adams, Jackson was elected, and is now known as one of the dark spots on the United States Presidential line. Not only did Jackson strongly support and profit from Slavery, he removed thousands of Native Americans from their homes and forced them across the infamous Trail of Tears. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Martin Van Buren</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/08-van-buren.jpg" alt="Presidential Portrait of Martin Van Buren" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1837 - March 4, 1841</p>
+                            <p><b>Lived</b>: 1782 - 1862</p>
+                            <p><b>Vice President</b>: Richard Mentor Johnson</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>Van Buren's family emigrated from Holland, and Van Buren himself spoke English as a second language; despite this, Van Buren is the first official American-born President, born after the American Revolution.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>William Henry Harrison</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/09-harrison.jpg" alt="Presidential Portrait of William Henry Harrison" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1841 - April 4, 1841</p>
+                            <p><b>Lived</b>: 1773 - 1841</p>
+                            <p><b>Vice President</b>: John Tyler</p>
+                            <p><b>Party</b>: Whigs</p>
+                            <p>Harrison was the first Presiden to die in office, living only a month after being elected and passing away from pneumonia.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>John Tyler</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/10-tyler.jpg" alt="Presidential Portrait of John Tyler" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: April 4, 1841 - March 4, 1845</p>
+                            <p><b>Lived</b>: 1790 - 1862</p>
+                            <p><b>Vice President</b>: No Vice President</p>
+                            <p><b>Party</b>: Whigs</p>
+                            <p>Tyler was the first President to begin serving in-office without an election; He was placed in the seat due to the power vaccum left by the premature death of William Henry Harrison.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>James K. Polk</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/11-polk.jpg" alt="Presidential Portrait of James K. Polk" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>:March 4, 1845 - March 4, 1849</p>
+                            <p><b>Lived</b>: 1795 - 1849</p>
+                            <p><b>Vice President</b>: George M. Dallas</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>Polk was exceptionally boring, apparently. Many knew him as stern and dreadully dull. On a better note, back in Polk's day people could visit the White House during Polk's 'office hours', meaning many could simply visit the President if they wanted an audience with him. Polk found these interruptions annoying.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Zachary Taylor</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/12-taylor.jpg" alt="Presidential Portrait of Zachary Taylor" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1849 - July 9, 1850</p>
+                            <p><b>Lived</b>: 1784 - 1850</p>
+                            <p><b>Vice President</b>: Millard Fillmore</p>
+                            <p><b>Party</b>: Whigs</p>
+                            <p>Taylor was chosen as the Whig nominee without him at the nomination event. He was mailed this news, but the sender didn't pay the postage fee. Taylor refused to pay for the package as he didn't know what it was, and didn't find out about his nomination until nearly a month later. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Millard Fillmore</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/13-fillmore.jpg" alt="Presidential Portrait of Millard Fillmore" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: July 9, 1850 - March 4, 1853</p>
+                            <p><b>Lived</b>: 1800 - 1874</p>
+                            <p><b>Vice President</b>: No Vice President</p>
+                            <p><b>Party</b>: Whigs</p>
+                            <p>Fillmore was a lover of books, also known as a bibliophile. He carried a dictionary around with him nearly at all times to improve his vocabulary, and he founded the first library in the White House. When a fire broke out in the Library of Congress during his Presidency, he personally raced there and helped put out the fire.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Franklin Pierce</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/14-pierce.jpg" alt="Presidential Portrait of Franklin Pierce" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1853 - March 4, 1857</p>
+                            <p><b>Lived</b>: 1804 - 1869</p>
+                            <p><b>Vice President</b>: William R. King</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>Pierce was known both before and during his Presidency as an alcoholic, with his wife having to deal with his many bouts when he was drunk. This earned Pierce the nickname, "Hero of Many a Well-Fought Bottle".</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>James Buchanan</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/15-buchanan.jpg" alt="Presidential Portrait of James Buchanan" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1857 - March 4, 1861</p>
+                            <p><b>Lived</b>: 1791 - 1868</p>
+                            <p><b>Vice President</b>: John C. Breckinridge</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>Buchanan was also known as the 'Bachelor President', was never officially married. He was engaged once but after a string of fights, called it off. A ward of Buchanan's named Harriet Lane served as 'First Lady' during his Presidency.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Abraham Lincoln</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/16-lincoln.jpg" alt="Presidential Portrait of Abraham Lincoln" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1861 - April 15, 1865</p>
+                            <p><b>Lived</b>: 1809 - 1865</p>
+                            <p><b>Vice President</b>: Hannibal Hamlin (1860) / Andrew Johnson (1864)</p>
+                            <p><b>Party</b>: Republicans / National Union</p>
+                            <p>Beginning with Lincoln's assasination, a series of strange coincidences began to plague those close to the event; Rober Todd Lincoln, the President's son, was nearly pushed into a moving train before being saved by Edwin Booth, the brother to John Wilkes Booth (the man who shot Abraham Lincoln). Years later, hours after Edwin passed, the theatre where Lincoln was shot collapsed.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Andrew Johnson</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/17-johnson.jpg" alt="Presidential Portrait of Andrew Johnson" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: April 15, 1865 - March 4, 1869</p>
+                            <p><b>Lived</b>: 1808 - 1875</p>
+                            <p><b>Vice President</b>: No Vice President</p>
+                            <p><b>Party</b>: National Union / Democrats</p>
+                            <p>Johnson was around for much of the Civil War during Lincoln's active interference, and supported the south and pursuit of freed slaves. Johnson saw both those that wished to leave the Union and those that wanted to fight for the Union in the Civil War as enemies, making a number of radical decision that ended up making him the first impeached President.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Ulysses S. Grant</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/18-grant.jpg" alt="Presidential Portrait of Ulysses S. Grant" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1869 - March 4, 1877</p>
+                            <p><b>Lived</b>: 1822 - 1885</p>
+                            <p><b>Vice President</b>: Schuyler Colfax (1868) / Henry Wilson (1872)</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Grant was the youngest president elected since Presidents had become part of the United States, being elected at the young age of 46.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Rutherford B. Hayes</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/19-hayes.jpg" alt="Presidential Portrait of Rutherford B. Hayes" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1877 - March 4, 1881</p>
+                            <p><b>Lived</b>: 1822 - 1893</p>
+                            <p><b>Vice President</b>: William A. Wheeler</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Hayes and his wife conducted the very first Easter egg roll on the White House lawn. It began a tradition that continues today on the Monday after Easter. This event is prominently featured in the movie <i>National Treasure: Book of Secrets</i></p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>James A. Garfield</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/20-garfield.jpg" alt="Presidential Portrait of James A. Garfield" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1881 - September 19, 1881</p>
+                            <p><b>Lived</b>: 1831 - 1881</p>
+                            <p><b>Vice President</b>: Chester A. Arthur</p>
+                            <p><b>Party</b>: Republicans </p>
+                            <p>The Star Route Scandal involved many members of Congress illegally profiting from purchased postal routes in the west. Garfield showed honor above party politics and ordered a thorough investigation, which led to many needed civil service reforms.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Chester A. Arthur</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/21-arthur.jpg" alt="Presidential Portrait of Chester A. Arthur" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: September 19, 1881 - March 4, 1885</p>
+                            <p><b>Lived</b>: 1829 - 1886</p>
+                            <p><b>Vice President</b>: No Vice President</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Elizabeth Jennings, a black schoolteacher, was forced out of a horse-drawn streetcar in New York on her way to the First Colored American Congregational Church. Through communication Arthur through her father, Arthur managed to get every New York Streetcar fully integrated. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Grover Cleveland</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/22-24-cleveland.jpg" alt="Presidential Portrait of Grover Cleveland" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1885 - March 4, 1889 / March 4, 1893 - March 4, 1897</p>
+                            <p><b>Lived</b>: 1837 - 1908</p>
+                            <p><b>Vice President</b>: Thomas A. Hendricks (1884) / Adlai Stevenson I (1892)</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>Cleveland ran for reelection in 1888, but the Tammany Hall group from New York City caused him to lose the presidency. When he ran again in 1892, they tried to keep him from winning again, but he managed to win by just ten electoral votes. This would make him the only president to serve two non-consecutive terms. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Benjamin Harrison</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/23-harrison.jpg" alt="Presidential Portrait of Bejamin Harrison" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1889 - March 4, 1893</p>
+                            <p><b>Lived</b>: 1833 - 1901</p>
+                            <p><b>Vice President</b>: Levi P. Morton</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Harrison is remembered for his impressive financial management, which included the passage of the McKinley Tariff and the Sherman Antitrust Act. His legacy is further cemented by the fact that he was the first president to pass a federal budget of over 1 billion dollars in a single year.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>William McKinley</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/25-mckinley.jpg" alt="Presidential Portrait of William McKinley" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1897 - September 14, 1901</p>
+                            <p><b>Lived</b>: 1843 - 1901</p>
+                            <p><b>Vice President</b>: Garret Hobart (1896) / Theodore Roosevelt (1900)</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>After the Spanish-American War, the strategic importance of the islands’ location in the Pacific Ocean became more apparent, and an annexation resolution supported by McKinley passed the House and Senate in 1898. The episode marked an end to a lengthy battle between native Hawaiians and white American businessmen for control of the local government. The last monarch of Hawaii, Queen Lili’uokalani, was overthrown in 1893, and Harrison actually sent a bill to the Senate to approve the annexation, but Grover Cleveland became president before it was passed, and he withdrew the bill.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Theodore 'Teddy' Roosevelt</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/26-roosevelt.jpg" alt="Presidential Portrait of Theodore Roosevelt" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: September 14, 1901 - March 4, 1909</p>
+                            <p><b>Lived</b>: 1858 - 1919</p>
+                            <p><b>Vice President</b>: Charles W. Fairbank</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>In 1906, Roosevelt convinced Japan and Russia to attend a peace conference in Portsmouth, New Hampshire to end their conflict. Roosevelt was awarded the Nobel Peace Prize for his efforts, becoming the first President to earn one.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>William Howard Taft</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/27-taft.jpg" alt="Presidential Portrait of William Howard Taft" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1909 - March 4, 1913</p>
+                            <p><b>Lived</b>: 1857 - 1930</p>
+                            <p><b>Vice President</b>: James S. Sherman</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Taft was the last President to have facial hair, ever. Nobody elected has had a hair on their face since then.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Woodrow Wilson</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/28-wilson.jpg" alt="Presidential Portrait of Woodrow Wilson" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1913 - March 4, 1921</p>
+                            <p><b>Lived</b>: 1856 - 1924</p>
+                            <p><b>Vice President</b>: Thomas R. Marshall</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>After initially feeling indifferent about allowing women the right to vote, his attitude changed as a result the women’s suffrage movement. Activists picketing outside the White House in 1917 were hauled away by police; Wilson was horrified to learn they were being force-fed following a hunger strike. In January 1918, Wilson advocated for men and women to have an equal voice in elections, and would later make written and verbal arguments to members of Congress. His lobbying undoubtedly helped states ratify the 19th Amendment in August 1920, finally granting women the right to cast their ballot.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Warren G. Harding</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/29-harding.jpg" alt="Presidential Portrait of Warren G. Harding" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1921 - August 2, 1923</p>
+                            <p><b>Lived</b>: 1865 - 1923</p>
+                            <p><b>Vice President</b>: Calvin Coolidge</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>One of Harding's failings was the fact that he put many friends in positions of power and influence with his election. Many of these friends caused issues for him and a few scandals arose. The most famous was the Teapot Dome scandal, in which Albert Fall, Harding's Secretary of the Interior, secretly sold the rights to oil reserves in Teapot Dome, Wyoming</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Calvin Coolidge</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/30-coolidge.jpg" alt="Presidential Portrait of Calvin Coolidge" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: August 2, 1923 - March 4, 1929</p>
+                            <p><b>Lived</b>: 1872 - 1933</p>
+                            <p><b>Vice President</b>: Charles G. Dawes</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Coolidge was famously known for 'doing nothing', but in a very positive sense. Coolidge kept government interference to a minimum through many businesses, allowing them to prosper. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Herbert Hoover</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/31-hoover.jpg" alt="Presidential Portrait of Herbert Hoover" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1929 - March 4, 1933</p>
+                            <p><b>Lived</b>: 1874 - 1964</p>
+                            <p><b>Vice President</b>: Charles Curtis</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Hoover was a famous humanitarian, more in activity than word. He was nominated five times for a Nobel Peace Prize for feeding starving members of the Soviet Union despite the 'Red Scare', for getting over 100 thousand Americans back home after War World I, and especially for circling the globe, coordinating efforts to feed the helpless during War World II, after he left the Presidency.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Franklin D. Roosevelt</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/32-roosevelt.jpg" alt="Presidential Portrait of Franklin D. Roosevelt" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: March 4, 1933 - April 12, 1945</p>
+                            <p><b>Lived</b>: 1882 - 1945</p>
+                            <p><b>Vice President</b>: John Nance Garner (1932) / Henry A. Wallace (1936) / Harry S. Truman (1940)</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>D. Roosevelt was an avid collector of both stamps and birds. After receiving a BB Gun, D. Roosevelt shot and stuffed nearly 300 different species of bird, and hanging them on his old family house's walls. D. Roosevelt is also known for establishing the movie theater in the White House.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Harry S. Truman</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/33-truman.jpg" alt="Presidential Portrait of Hary S. Truman" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: April 12, 1945 - January 20, 1953</p>
+                            <p><b>Lived</b>: 1884 - 1972</p>
+                            <p><b>Vice President</b>: Alben W. Barkley</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>After learning about the Manhattan Project previously, Truman was the man who made the decision to show the Soviets how serious the United States were, and made the choice to drop the devastating bombs in Hiroshima and Nagasaki at the tail end of World War II.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Dwight. D. Eisenhower</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/34-eisenhower.jpg" alt="Presidential Portrait of Dwight D. Eisenhower" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1953 - January 20, 1961</p>
+                            <p><b>Lived</b>: 1890 - 1969</p>
+                            <p><b>Vice President</b>: Richard Nixon</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>In the spring of 1954, the American Public Golf Association installed an outdoor putting green steps away from the Oval Office. To the dismay of Eisenhower, who was an avid golfer, the squirrels who roamed the White House grounds continually dug up the putting green to bury their acorns and walnuts. Truman ordered for the rodents to be shot, but the groundskeepers instead began to shoo them away.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>John F. Kennedy</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/35-kennedy.jpg" alt="Presidential Portrait of John F. Kennedy" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1961 - January 20, 1961</p>
+                            <p><b>Lived</b>: 1917 - 1963</p>
+                            <p><b>Vice President</b>: Lyndon B. Johnson</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>During his time as president, Kennedy invited several dozen African leaders to the White House. He was an avid supporter of African nationalism, independence, anti-colonialism, and self-determination. His attempts were reduced by the presence of the Cold War and the Soviet Union’s interest in the Congo.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Lyndon B. Johnson</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/36-johnson.jpg" alt="Presidential Portrait of Lyndon B. Johnson" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: November 22, 1963 - January 20, 1969</p>
+                            <p><b>Lived</b>: 1908 - 1973</p>
+                            <p><b>Vice President</b>: Hubert Humphrey</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>A demanding boss, workaholic, and chain smoker, Johnson had a heart attack in the summer of 1955 during his time as Senate Majority Leader. Within a few days of the health scare, he had telephones and mimeograph machines brought to his hospital room so he could resume an intensely long work day. He stopped smoking, but he would later describe his heart attack as “the worst a man could have and still live.”</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Richard Nixon</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/37-nixon.jpg" alt="Presidential Portrait of Richard Nixon" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1969 - August 9, 1974</p>
+                            <p><b>Lived</b>: 1913 - 1994</p>
+                            <p><b>Vice President</b>: Spiro Agnew / Gerald Ford</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>One of Nixon’s favorite pastimes in the White House was bowling. He’d even bowl a few frames dressed in his suit. In addition to using the alley in the adjacent Old Executive Office Building, Nixon had another one-lane alley built in the basement beneath the North Portico entrance to the White House.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Gerald Ford</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/38-ford.jpg" alt="Presidential Portrait of Gerald Ford" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: August 9, 1974 - January 20, 1977</p>
+                            <p><b>Lived</b>: 1913 - 2006</p>
+                            <p><b>Vice President</b>: Nelson Rockefeller</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>In addition to Ford’s clumsiness, satirists had a lot to dine out on when it came to some of Ford’s Yogi Berra-esque tongue slips. Americans, he once said, were possessed of a strong “work ethnic,” while “sickle-cell Armenia” was a disease for which he offered sympathy.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Jimmy Carter</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/39-carter.jpg" alt="Presidential Portrait of Jimmy Carter" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1977 - January 20, 1981</p>
+                            <p><b>Lived</b>: 1924 - ?</p>
+                            <p><b>Vice President</b>: Walter Mondale</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>When Carter entered the office of the presidency in 1977, he made it clear that he considered himself no more elevated in status than his voters simply because of political power. He sold the presidential yacht, thinking it a symbol of excess; he also carried his own briefcase and banned workers from playing “Hail to the Chief” during appearances.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Ronald Reagan</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/40-reagan.jpg" alt="Presidential Portrait of Ronald Reagan" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1981 - January 20, 1989</p>
+                            <p><b>Lived</b>: 1911 - 2004</p>
+                            <p><b>Vice President</b>: George H. W. Bush</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>In 1983, Reagan admitted he relied on use of a hearing aid in order to address age-related hearing loss. Previously, hearing aids had been stigmatized in the U.S. as representing a feeble constitution. After Reagan’s announcement, sales of hearing aid equipment soared. Starkey Laboratories, which made the president’s device, quadrupled its sales in the months following the publicity.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>George H. W. Bush</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/41-bush.jpg" alt="Presidential Portrait of George H. W. Bush" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1989 - January 20, 1993</p>
+                            <p><b>Lived</b>: 1924 - 2018</p>
+                            <p><b>Vice President</b>: Dan Quayle</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>In 1992, during a state dinner in Japan, Bush fell ill with the flu and fell sick into the lap of Japan's prime minister, Kiichi Miyazawa. He collapsed in his chair and fainted before the first lady and Secret Service agents rushed to help him. The incident was spoofed on the late-night comedy "Saturday Night Live," with comedian Dana Carvey playing Bush.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Bill Clinton</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/42-clinton.jpg" alt="Presidential Portrait of Bill Clinton" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 1993 - January 20, 2001</p>
+                            <p><b>Lived</b>: 1946 - ?</p>
+                            <p><b>Vice President</b>: Al Gore</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>When he was 32 years old, Clinton ran for governor of Arkansas and won. He was known as the “Boy Governor” when he won election in 1978 at the age of just 32. He failed to be immediately re-elected. He was able to regain the public’s trust and retook his spot as governor in the next term. </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>George W. Bush</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/43-bush.jpg" alt="Presidential Portrait of George W. Bush" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 2001 - January 20, 2009</p>
+                            <p><b>Lived</b>: 1946 - ?</p>
+                            <p><b>Vice President</b>: Dick Cheney</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Following the terrorist attacks of 9/11, Bush signed the Patriot Act. This expanded the surveillance abilities of law enforcement, permitted law enforcement to search homes and businesses without the owner’s consent or knowledge, and authorized indefinite detention without trial of immigrants. Federal courts later ruled that multiple provisions in the act were unconstitutional.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Barack Obama</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/44-obama.jpg" alt="Presidential Portrait of Barack Obama" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 2009 - January 20, 2017</p>
+                            <p><b>Lived</b>: 1961 - ?</p>
+                            <p><b>Vice President</b>: Joe Biden</p>
+                            <p><b>Party</b>: Democrats</p>
+                            <p>During his presidency some claimed that Barack Obama was not born in the United States, which, according to the U.S. Constitution, would make him unable to serve as president. He released his birth certificate to reaffirm that he had been born in Hawaii.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Donald Trump</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/45-donald-trump.png" alt="Presidential Portrait of Donald Trump" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 2017 - January 20, 2021</p>
+                            <p><b>Lived</b>: 1946 - ?</p>
+                            <p><b>Vice President</b>: Mike Pence</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>Trump has never filed for personal bankruptcy but between 1991 and 2009, he had been filed for bankruptcy six times for his business properties.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 350px; border: 3px solid black; margin: 10px; background-color: burlywood;">
+
+                    <div class="card-header" style="background-color: brown; color: white;">
+                        <b>Joe Biden</b>
+                    </div>
+
+                    <span data-bs-toggle="tooltip" data-bs-placement="top" title="Presidential Portrait">
+                        <img class="card-img" src="PresImg/46-joe-biden.png" alt="Presidential Portrait of Joe Biden" />
+                    </span>
+
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p><b>Served</b>: January 20, 2021 - ?</p>
+                            <p><b>Lived</b>: 1942 - ?</p>
+                            <p><b>Vice President</b>: Kamala Harris</p>
+                            <p><b>Party</b>: Republicans</p>
+                            <p>During Joe Biden’s time as Vice President, Joe was given the authorization to lead an initiative to combat cancer in 2016. Called the National Cancer (Moonshot) Initiative, Joe’s team had the goal to act as a catalyst for cancer research by expediting discoveries, promoting greater collaboration, and making research more transparent between researchers and the public.</p>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </body>
+</html>
